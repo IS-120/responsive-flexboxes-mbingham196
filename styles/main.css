@@ -1,0 +1,193 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --color-main: #224952;
+  --color-highlight: #3f752d;
+  --color-highlight-2: #974422;
+  --color-highlight-3: #202a44;
+  --color-text: #636363;
+  --color-background: #4a6f87;
+}
+
+body {
+  line-height: 1.5;
+  font-family: "Anton", sans-serif;
+  color: var(--color-text);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+main {
+  margin: 0 auto;
+  padding: 0 1rem;
+  max-width: 50rem;
+}
+
+aside,
+footer {
+  padding: 0 1rem;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Merriweather", serif;
+  color: var(--color-highlight-3);
+}
+
+p {
+  font-family: "Anton", sans-serif;
+  margin-bottom: 2rem;
+}
+
+/* .hero .picture {
+  backdrop-filter: blur(20px);
+} */
+
+.hero {
+  display: flex;
+  flex: 1 1 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vp;
+  margin: none;
+}
+
+.hero .text-overlay {
+  position: absolute;
+  top: 5rem;
+  backdrop-filter: blur(2px);
+  border-radius: 25%;
+}
+
+.text-overlay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero h1 {
+  font-size: clamp(2rem, 7vw, 7rem);
+  text-shadow: 5px 5px #636363;
+}
+
+.hero .text-overlay p {
+  font-size: 3rem;
+  color: var(--color-highlight-3);
+}
+
+/* .hero .picture {
+  position: absolute;
+  filter: sepia(60%);
+} */
+
+/* img {
+  width: 100%;
+  display: block;
+} */
+
+img {
+  width: 100%;
+  height: auto;
+  max-width: 600px;
+  display: block;
+}
+
+ul {
+  background-color: #224952;
+  display: flex;
+  justify-content: space-around;
+}
+
+ul li {
+  margin: 1rem 3rem;
+}
+
+.hero-image img {
+  max-width: none;
+  max-height: 800px;
+  height: 100vh;
+  width: 100%;
+  display: cover;
+}
+
+.cards img {
+  /* width: 100%; */
+  height: auto;
+  display: cover;
+}
+
+.cards img:hover {
+  transform: scale(1.15);
+}
+
+.cards {
+  display: flex;
+  justify-content: space-around;
+  flex: 1 1 20%;
+}
+
+.card .text-overlay {
+  /* position: relative; */
+  display: flex;
+  align-items: flex-end;
+  background-color: #224952;
+  top: -5rem;
+  font-size: 1rem;
+  padding: 2rem;
+}
+
+.sidewalk .text-overlay {
+  top: -6.5rem;
+}
+
+.card {
+  width: 20vw;
+  height: 500px;
+}
+
+.card:hover {
+  cursor: pointer;
+  overflow: hidden;
+}
+
+a[href]:hover {
+  background-color: #3f752d;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.button:hover {
+  background-color: #3f752d;
+  cursor: pointer;
+}
+
+.button {
+  padding: 1rem;
+  border: 0.25rem solid var(--button-color);
+  border-color: #202a44;
+  background-color: #202a;
+  transition: background-color 300ms;
+  display: inline-block;
+}
+
+article {
+  margin-bottom: 5rem;
+}
+
+/* temp fix to size about img */
+/* img[srcset] {
+  width: 50%;
+  height: auto;
+  margin: 2rem auto;
+} */
