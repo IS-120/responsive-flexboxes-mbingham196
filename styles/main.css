@@ -193,10 +193,6 @@ article {
   margin-bottom: 5rem;
 }
 
-.panel figure .dance-pic {
-  order: -1;
-}
-
 @media (min-width: 401px) {
   .cards {
     display: flex;
@@ -232,6 +228,10 @@ article {
   .ballroom {
     width: 30vw;
     height: auto;
+  }
+
+  .left {
+    order: -1;
   }
 }
 
