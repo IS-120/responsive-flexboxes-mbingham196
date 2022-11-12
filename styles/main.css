@@ -18,12 +18,26 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: stretch;
 }
 
 main {
-  margin: 0 auto;
+  margin: none;
   padding: 0 1rem;
   max-width: 50rem;
+}
+
+header nav ul {
+  margin: 0;
+}
+
+li a:hover {
+  color: white;
+  background-color: pink;
+}
+
+li a.href:hover {
+  background-color: pink;
 }
 
 aside,
@@ -45,25 +59,20 @@ p {
   margin-bottom: 2rem;
 }
 
-/* .hero .picture {
-  backdrop-filter: blur(20px);
-} */
-
 .hero {
   display: flex;
   flex: 1 1 100%;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   width: 100vp;
   margin: none;
 }
 
 .hero .text-overlay {
   position: absolute;
-  top: 5rem;
   backdrop-filter: blur(2px);
-  border-radius: 25%;
+  inset: 0;
+  margin: 0;
 }
 
 .text-overlay {
@@ -80,17 +89,8 @@ p {
 .hero .text-overlay p {
   font-size: 3rem;
   color: var(--color-highlight-3);
+  margin: 0;
 }
-
-/* .hero .picture {
-  position: absolute;
-  filter: sepia(60%);
-} */
-
-/* img {
-  width: 100%;
-  display: block;
-} */
 
 img {
   width: 100%;
@@ -114,11 +114,10 @@ ul li {
   max-height: 800px;
   height: 100vh;
   width: 100%;
-  display: cover;
+  object-fit: cover;
 }
 
 .cards img {
-  /* width: 100%; */
   height: auto;
   display: cover;
 }
@@ -129,27 +128,36 @@ ul li {
 
 .cards {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 1 45%;
+}
+
+.card-row {
+  display: flex;
+  flex-direction: column;
   justify-content: space-around;
-  flex: 1 1 20%;
 }
 
 .card .text-overlay {
-  /* position: relative; */
+  position: relative;
+  top: -5rem;
   display: flex;
-  align-items: flex-end;
   background-color: #224952;
   top: -5rem;
-  font-size: 1rem;
-  padding: 2rem;
+  font-size: 5vw;
+  padding: 1rem;
+  text-align: center;
+  height: 6.5rem;
 }
 
-.sidewalk .text-overlay {
-  top: -6.5rem;
+.card p {
+  text-align: center;
 }
 
 .card {
-  width: 20vw;
-  height: 500px;
+  width: 90vw;
+  height: auto;
 }
 
 .card:hover {
@@ -185,9 +193,69 @@ article {
   margin-bottom: 5rem;
 }
 
-/* temp fix to size about img */
-/* img[srcset] {
-  width: 50%;
-  height: auto;
-  margin: 2rem auto;
-} */
+.panel figure .dance-pic {
+  order: -1;
+}
+
+@media (min-width: 401px) {
+  .cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex: 1 1 20%;
+  }
+
+  .card-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 1rem;
+  }
+
+  .card {
+    width: 45vw;
+    height: auto;
+  }
+
+  .card .text-overlay {
+    font-size: 3vw;
+  }
+
+  .panel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95vw;
+    height: 100vh;
+  }
+
+  .ballroom {
+    width: 30vw;
+    height: auto;
+  }
+}
+
+@media (min-width: 801px) {
+  .cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex: 1 1 20%;
+    /* max-width: 95vw; */
+  }
+
+  .card-row {
+    display: flex;
+    justify-content: space-around;
+    gap: 1.5rem;
+  }
+
+  .card {
+    width: 22.5vw;
+    height: auto;
+  }
+
+  .card .text-overlay {
+    font-size: 1rem;
+  }
+}

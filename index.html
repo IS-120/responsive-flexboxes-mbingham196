@@ -49,9 +49,6 @@
   </section>
 
   <header>
-    <!-- <svg>
-      <use href="#target" />
-    </svg> -->
     <nav>
       <ul>
         <li><a>Home</a></li>
@@ -60,53 +57,68 @@
       </ul>
     </nav>
   </header>
-  <!-- copy your main, aside, and footer from your previous assignment here -->
+
   <main>
-    <figure>
-      <img srcset="images/mb-300w.jpg 300w,
+    <article class="panel">
+      <figure>
+        <img srcset="images/mb-300w.jpg 300w,
                  images/mb-600w.jpg 600w,
                  images/mb-900w.jpg 900w" sizes="50vw" src="images/mb-600w.jpg"
-        alt="A Recent Headshot of Matthew Bingham" height="494" width="600">
-      <figcaption>August 2022; Starting BYU</figcaption>
-    </figure>
-    <article>
-      <h2>My Family</h2>
-      <p><strong>The Binghams</strong></p>
-
-      <a href="" class="button">About Me</a>
+          alt="A Recent Headshot of Matthew Bingham" height="494" width="600">
+        <figcaption>August 2022; Starting BYU</figcaption>
+      </figure>
+      <div class="text">
+        <h2>My Family</h2>
+        <p><strong>The Binghams</strong></p>
+        <a href="" class="button">About Me</a>
+      </div>
     </article>
-    <article>
-      <h2>Things I like to do</h2>
-      <p><em>I love math and adventures.</em></p>
-      <h3>I am majoring in Applied Mathematics. I love singing and playing the piano. I enjoy unicycling, playing
-        Ultimate Disc, hiking, and being outdoors. I love spending time with my family.</h3>
-      <a href="" class="button">Learn More</a>
+    <article class="panel">
+      <div class="text">
+        <h2>Things I like to do</h2>
+        <p><em>I love math and adventures.</em></p>
+        <h3>I am majoring in Applied Mathematics. I love singing and playing the piano. I enjoy unicycling, playing
+          Ultimate Disc, hiking, and being outdoors. I enjoy dancing, whether it is Ballroom, or more recently Folk
+          Dance.
+          I love spending time with my family.</h3>
+        <a href="" class="button">Learn More</a>
+      </div>
+      <figure class="dance-pic">
+        <div class="ballroom">
+          <img srcset="images/ballroom.jpg">
+        </div>
+        <figcaption>A Ballroom Dance Performance</figcaption>
+      </figure>
     </article>
   </main>
 
   <section class="cards">
-    <a class="card">
-      <img src="images/kids-picture.jpg" width="480" height="640" alt="" />
-      <p class="text-overlay">I love my niece and nephews!</p>
-    </a>
+    <div class="card-row">
+      <a class="card">
+        <img src="images/kids-picture.jpg" width="480" height="640"
+          alt="A picture of Matthew Bingham with his niece and two nephews" />
+        <p class="text-overlay">I love my niece and nephews!</p>
+      </a>
 
-    <a class="card">
-      <img src="images/family-picture-1.jpg" width="480" height="640" alt="" />
-      <p class="text-overlay">I have a loving family</p>
-    </a>
+      <a class="card">
+        <img src="images/family-picture-1.jpg" width="480" height="640" alt="A picture of the Bingham Family" />
+        <p class="text-overlay">I have a loving family</p>
+      </a>
+    </div>
+    <div class="card-row">
 
-    <a class="card">
-      <div class="sidewalk">
-        <img src="images/missionary-photo.jpg" width="480" height="640" alt="" />
+      <a class="card">
+        <img src="images/missionary-photo.jpg" width="480" height="640"
+          alt="A picture of Matthew Bingham as a missionary" />
         <p class="text-overlay">I was blessed to serve as a missionary in Seattle Washington</p>
-      </div>
-    </a>
+      </a>
 
-    <a class="card">
-      <img src="images/hike-picture.jpg" width="480" height="640" alt="" />
-      <p class="text-overlay">I love anything and everything outdoors</p>
-    </a>
-
+      <a class="card">
+        <img src="images/hike-picture.jpg" width="480" height="640"
+          alt="A picture of Matthew Bingham on a Hike in Alaska" />
+        <p class="text-overlay">I love anything and everything outdoors</p>
+      </a>
+    </div>
   </section>
 
   <aside></aside>
