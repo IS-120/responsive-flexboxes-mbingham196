@@ -1,5 +1,7 @@
 <!-- cSpell:enable  -->
 
+This site is meant to introduce me and possibly be used as a dynamic resume in the future.
+
 # Responsive flexboxes
 
 **Objectives**: Learn how to use flexbox and media queries to create responsive layouts.
